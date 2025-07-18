@@ -230,7 +230,7 @@ section{
 }
 
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 20px;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -320,8 +320,6 @@ section{
 }
 
 .project-card{
-    /* max-width: 500px;
-    max-height: 600px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -427,6 +425,7 @@ section{
 @media (max-width:1200px){
     #menu-icon{
         display: block;
+        cursor: pointer;
     }
 
     .navbar{
@@ -447,5 +446,61 @@ section{
         font-size: 2rem;
         margin: 3rem 0;
         color: var(--text-color);
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .gradient-btn{
+        display: none;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+
+    .home-content{
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-img img{
+        width: 46vw;
+    }
+
+    .home-content p{
+        max-width: 60vw;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about h2{
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .about img{
+        width: 40vw;
+    }
+
+    .contact form{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:700px){
+    .home-content h1{
+        /* font-size: 7.5rem; */
+        font-size: 5rem;
+    }
+    .home-content h3{
+        /* font-size: 4.5rem; */
+        font-size: 3rem;
     }
 }
